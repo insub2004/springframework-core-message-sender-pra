@@ -15,6 +15,7 @@
     <bean id="emailMessageSender"
           class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"
           scope="singleton"
-          >
+          init-method="init"
+          destroy-method="destroy">
     </bean>
 </beans>
