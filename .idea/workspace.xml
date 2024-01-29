@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="Bill of Materials - Versionr관리 편함 artifactId : spring-framework-bom">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="다형성 실습 1번">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -24,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra01" />
+        <entry key="$PROJECT_DIR$" value="pra02/polymorphism01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,7 +35,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="2bd901HNzMkYlCgM7t5QZpObWIw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +47,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/polymorphism01",
+    "git-widget-placeholder": "pra02/polymorphism02",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706533862387</updated>
-      <workItem from="1706533863540" duration="2393000" />
+      <workItem from="1706533863540" duration="3095000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -111,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706534801700</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="다형성 실습 1번">
+      <option name="closed" value="true" />
+      <created>1706537447574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706537447574</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +153,7 @@
     <MESSAGE value="프로젝트 생성" />
     <MESSAGE value="spring-context 관련 라이브러리들 사용을 위해 pom 추가" />
     <MESSAGE value="Bill of Materials - Versionr관리 편함 artifactId : spring-framework-bom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bill of Materials - Versionr관리 편함 artifactId : spring-framework-bom" />
+    <MESSAGE value="다형성 실습 1번" />
+    <option name="LAST_COMMIT_MESSAGE" value="다형성 실습 1번" />
   </component>
 </project>
