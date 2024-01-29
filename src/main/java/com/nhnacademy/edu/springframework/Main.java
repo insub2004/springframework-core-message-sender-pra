@@ -14,11 +14,16 @@ public class Main {
         User user = new User("윤인섭@naver.com", "010-2222-2222");
 
         try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
-
-            MessageSender smsMessageSender = context.getBean("smsMessageSender", MessageSender.class);
-
-            MessageSendService messageSendService = new MessageSendService(smsMessageSender);
-            messageSendService.doSendMessage(user, "IoC 실습 1");
+            //scope : 싱글톤이면 생성자 호출이 한 번
+            //scope : prototype 이면 호출 될 때마다 생성자 호출
+            System.out.println("--------------");
+            new MessageSendService(context.getBean("smsMessageSender",MessageSender.class)).doSendMessage(user, "sms message");
+            System.out.println("--------------");
+            new MessageSendService(context.getBean("smsMessageSender",MessageSender.class)).doSendMessage(user, "sms message");
+            System.out.println("--------------");
+            new MessageSendService(context.getBean("emailMessageSender",MessageSender.class)).doSendMessage(user, "email message");
+            System.out.println("--------------");
+            new MessageSendService(context.getBean("emailMessageSender",MessageSender.class)).doSendMessage(user, "email message");
         }
     }
 
