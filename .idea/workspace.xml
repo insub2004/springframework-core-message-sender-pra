@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="IoC 실습 1번 beans.xml 추가 bean 객체 생성">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="IoC 실습 2번 bean Scope singleton,prototype 차이">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" afterDir="false" />
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra02/IoC01" />
+        <entry key="$PROJECT_DIR$" value="pra02/IoC02" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,7 +52,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/IoC02",
+    "git-widget-placeholder": "pra02/IoC03",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -134,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706541943142</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="IoC 실습 2번 bean Scope singleton,prototype 차이">
+      <option name="closed" value="true" />
+      <created>1706542526282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706542526282</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +178,7 @@
     <MESSAGE value="Bill of Materials - Versionr관리 편함 artifactId : spring-framework-bom" />
     <MESSAGE value="다형성 실습 1번" />
     <MESSAGE value="IoC 실습 1번 beans.xml 추가 bean 객체 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="IoC 실습 1번 beans.xml 추가 bean 객체 생성" />
+    <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이" />
+    <option name="LAST_COMMIT_MESSAGE" value="IoC 실습 2번 bean Scope singleton,prototype 차이" />
   </component>
 </project>

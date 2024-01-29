@@ -8,11 +8,15 @@
 
     <bean id="smsMessageSender"
           class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
-          scope="prototype">
+          scope="prototype"
+          init-method="init"
+          destroy-method="destroy">
     </bean>
 
     <bean id="emailMessageSender"
           class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"
-          scope="singleton">
+          scope="singleton"
+          init-method="init"
+          destroy-method="destroy">
     </bean>
 </beans>

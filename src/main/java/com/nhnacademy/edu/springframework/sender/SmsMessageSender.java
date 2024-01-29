@@ -4,8 +4,16 @@ import com.nhnacademy.edu.springframework.domain.User;
 
 public class SmsMessageSender implements MessageSender{
 
-    public SmsMessageSender(){
+    public SmsMessageSender() {
         System.out.println("SmsMessageSender initiated!!!");
+    }
+
+    public void init() {
+        System.out.println("init method called in SmsMessageSender");
+    }
+
+    public void destroy() {
+        System.out.println("destroy method called in SmsMessageSender");
     }
     @Override
     public void sendMessage(User user, String message) {
