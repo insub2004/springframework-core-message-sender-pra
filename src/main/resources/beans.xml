@@ -8,7 +8,7 @@
 
     <bean id="smsMessageSender"
           class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
-          scope="prototype"
+          scope="singleton"
           >
     </bean>
 
@@ -16,5 +16,11 @@
           class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"
           scope="singleton"
           >
+    </bean>
+
+    <bean id="messageSendService"
+          class="com.nhnacademy.edu.springframework.service.MessageSendService"
+          >
+        <constructor-arg ref="smsMessageSender"></constructor-arg>
     </bean>
 </beans>
