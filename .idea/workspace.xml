@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="IoC 실습 2번 bean Scope singleton,prototype 차이">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +137,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706542526282</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="IoC 실습 2번 bean Scope singleton,prototype 차이">
+      <option name="closed" value="true" />
+      <created>1706543326928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706543326928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋">
+      <option name="closed" value="true" />
+      <created>1706543419439</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706543419439</updated>
+    </task>
+    <task id="LOCAL-00009" summary="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋2">
+      <option name="closed" value="true" />
+      <created>1706543451500</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706543451500</updated>
+    </task>
+    <task id="LOCAL-00010" summary="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용">
+      <option name="closed" value="true" />
+      <created>1706543495399</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706543495399</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +186,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="pra02/polymorphism01" />
+                        <option value="origin/pra02/IoC03" />
                       </list>
                     </value>
                   </entry>
@@ -179,6 +205,20 @@
     <MESSAGE value="다형성 실습 1번" />
     <MESSAGE value="IoC 실습 1번 beans.xml 추가 bean 객체 생성" />
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이" />
-    <option name="LAST_COMMIT_MESSAGE" value="IoC 실습 2번 bean Scope singleton,prototype 차이" />
+    <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋" />
+    <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋2" />
+    <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
