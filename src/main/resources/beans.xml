@@ -10,17 +10,17 @@
     <!-- annotation 설정을 위해 추가-->
     <context:annotation-config></context:annotation-config>
 
-    <bean id="smsMessageSender"
-          class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
-          scope="singleton"
-          >
-    </bean>
-
-<!--    <bean id="emailMessageSender"-->
-<!--          class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"-->
+<!--    <bean id="smsMessageSender"-->
+<!--          class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"-->
 <!--          scope="singleton"-->
 <!--          >-->
 <!--    </bean>-->
+
+    <bean id="emailMessageSender"
+          class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"
+          scope="singleton"
+          >
+    </bean>
 
     <bean id="messageSendService"
           class="com.nhnacademy.edu.springframework.service.MessageSendService"
