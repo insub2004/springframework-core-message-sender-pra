@@ -18,6 +18,7 @@ public class MessageSendService {
     }
 
     public MessageSendService(SmsMessageSender messageSender){
+        System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
     }
 
