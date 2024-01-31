@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="DI 실습04/02 생성자 1개인 경우 @Autowired 생략가능">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="DI 실습04/02 Qualifier">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -24,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra02/DI04" />
+        <entry key="$PROJECT_DIR$" value="pra02/DI04-01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +51,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/DI04-01",
+    "git-widget-placeholder": "pra02/DI04-02",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -103,7 +106,7 @@
       <workItem from="1706680408863" duration="598000" />
       <workItem from="1706681380368" duration="2480000" />
       <workItem from="1706690902342" duration="157000" />
-      <workItem from="1706691065488" duration="2530000" />
+      <workItem from="1706691065488" duration="5261000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -249,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706693500364</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="DI 실습04/02 Qualifier">
+      <option name="closed" value="true" />
+      <created>1706693895321</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1706693895321</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +297,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/pra02/DI04" />
+                        <option value="origin/pra02/DI04-01" />
                       </list>
                     </value>
                   </entry>
@@ -315,6 +326,7 @@
     <MESSAGE value="annotation, xml에 annotation 관련 설정 추가 + @Required 어노테이션 사용" />
     <MESSAGE value="DI 실습04/02 @Autowired setMethod, consturcter, field (Qulifier사용 가눙)" />
     <MESSAGE value="DI 실습04/02 생성자 1개인 경우 @Autowired 생략가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="DI 실습04/02 생성자 1개인 경우 @Autowired 생략가능" />
+    <MESSAGE value="DI 실습04/02 Qualifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="DI 실습04/02 Qualifier" />
   </component>
 </project>

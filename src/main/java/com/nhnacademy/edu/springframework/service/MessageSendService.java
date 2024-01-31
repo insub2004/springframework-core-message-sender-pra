@@ -1,5 +1,7 @@
 package com.nhnacademy.edu.springframework.service;
 
+import com.nhnacademy.edu.springframework.annotation.CustomSms;
+import com.nhnacademy.edu.springframework.annotation.Kind;
 import com.nhnacademy.edu.springframework.domain.User;
 import com.nhnacademy.edu.springframework.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.sender.MessageSender;
@@ -20,7 +22,7 @@ public class MessageSendService {
 //        System.out.println("service 기본 생성자 실행");
 //    }
     @Autowired
-    public MessageSendService(@Qualifier("emailMessageSender") MessageSender messageSender){
+    public MessageSendService(@CustomSms(kind = Kind.EMAIL, dummy = false) MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
     }
