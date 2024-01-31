@@ -4,6 +4,8 @@ import com.nhnacademy.edu.springframework.domain.User;
 import com.nhnacademy.edu.springframework.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.sender.MessageSender;
 import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
 
 public class MessageSendService {
@@ -18,7 +20,7 @@ public class MessageSendService {
         System.out.println("service 기본 생성자 실행");
     }
 
-
+    @Autowired
     public MessageSendService(MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
@@ -27,8 +29,8 @@ public class MessageSendService {
     public void doSendMessage(User user, String message) {
         messageSender.sendMessage(user, message);
     }
-
-    @Required
+    
+    
     public void setMessageSender(MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
         this.messageSender = messageSender;

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="annotation, xml에 annotation 관련 설정 추가">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="annotation, xml에 annotation 관련 설정 추가 + @Required 어노테이션 사용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" afterDir="false" />
@@ -106,7 +106,7 @@
       <workItem from="1706680408863" duration="598000" />
       <workItem from="1706681380368" duration="2480000" />
       <workItem from="1706690902342" duration="157000" />
-      <workItem from="1706691065488" duration="619000" />
+      <workItem from="1706691065488" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -228,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706686129672</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="annotation, xml에 annotation 관련 설정 추가 + @Required 어노테이션 사용">
+      <option name="closed" value="true" />
+      <created>1706692034147</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706692034147</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +253,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/pra02/DI02" />
+                        <option value="origin/pra02/DI04" />
                       </list>
                     </value>
                   </entry>
@@ -271,6 +279,7 @@
     <MESSAGE value="DI 실습 02, setter 주입 방식" />
     <MESSAGE value="DI 실습 03, Autowired byName" />
     <MESSAGE value="DI 실습 03, Autowired by construct" />
-    <option name="LAST_COMMIT_MESSAGE" value="DI 실습 03, Autowired by construct" />
+    <MESSAGE value="annotation, xml에 annotation 관련 설정 추가 + @Required 어노테이션 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="annotation, xml에 annotation 관련 설정 추가 + @Required 어노테이션 사용" />
   </component>
 </project>
