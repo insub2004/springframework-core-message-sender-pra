@@ -38,8 +38,8 @@
         </qualifier>
     </bean>
 
-    <bean id="messageSendService"
+<!--    <bean id="messageSendService"
           class="com.nhnacademy.edu.springframework.service.MessageSendService"
     >
-    </bean>
+    </bean>-->
 </beans>

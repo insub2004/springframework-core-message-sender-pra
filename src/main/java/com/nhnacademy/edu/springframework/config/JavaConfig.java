@@ -2,6 +2,7 @@ package com.nhnacademy.edu.springframework.config;
 
 import com.nhnacademy.edu.springframework.annotation.CustomSms;
 import com.nhnacademy.edu.springframework.annotation.Kind;
+import com.nhnacademy.edu.springframework.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.sender.MessageSender;
 import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
 import com.nhnacademy.edu.springframework.service.MessageSendService;
@@ -17,6 +18,11 @@ public class JavaConfig {
     @CustomSms(kind = Kind.SMS, dummy = true)
     public SmsMessageSender smsMessageSender() {
         return new SmsMessageSender();
+    }
+
+    @Bean
+    public MessageSendService messageSendService() {
+        return new MessageSendService(smsMessageSender());
     }
 
 }

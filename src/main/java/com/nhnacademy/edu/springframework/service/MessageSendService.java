@@ -21,13 +21,14 @@ public class MessageSendService {
     @Value("${phoneNumber}")
     private String phoneNumber;
 
-    //기본 생성자가 무조건 있어야함 왜냐 set주입을 사용할 것이기 때문에
 //    public MessageSendService(){
 //        System.out.println("service 기본 생성자 실행");
 //    }
+
     @Autowired
-    public MessageSendService(@CustomSms(kind = Kind.SMS, dummy = true) MessageSender messageSender){
+    public MessageSendService(MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
+        System.out.println(messageSender.hashCode());
         this.messageSender = messageSender;
     }
 
@@ -37,9 +38,10 @@ public class MessageSendService {
         System.out.println("변경 후 전화번호 : " + user.getPhoneNumber());
         messageSender.sendMessage(user, message);
     }
-    
-    public void setMessageSender(MessageSender messageSender) {
+
+    public void setMessageSender(@Qualifier("smsMessageSender") MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
+        System.out.println(messageSender.hashCode());
         this.messageSender = messageSender;
     }
 
