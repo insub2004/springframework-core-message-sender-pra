@@ -25,8 +25,8 @@ public class MessageSendService {
         messageSender.sendMessage(user, message);
     }
 
-    // set추가
-    public void setMessageSender(MessageSender messageSender) {
+    // set메서드 이름이 중요함
+    public void setSmsMessageSender(MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
         this.messageSender = messageSender;
     }
