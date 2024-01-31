@@ -20,7 +20,7 @@
 
     <bean id="messageSendService"
           class="com.nhnacademy.edu.springframework.service.MessageSendService"
-          autowire="byName">
-        <!-- set메소드 이름이 중요함-->
+          autowire="byType">
+        <!-- set메소드 파라미터 타입이 중요함-->
     </bean>
 </beans>

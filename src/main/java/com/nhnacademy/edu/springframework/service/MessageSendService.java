@@ -25,7 +25,7 @@ public class MessageSendService {
         messageSender.sendMessage(user, message);
     }
 
-    // set메서드 이름이 중요함
+    // set메서드 이름보단 set메서드의 타입이 중요함
     public void setSmsMessageSender(MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
         this.messageSender = messageSender;
