@@ -22,7 +22,7 @@ public class MessageSendService {
 //        System.out.println("service 기본 생성자 실행");
 //    }
     @Autowired
-    public MessageSendService(@CustomSms(kind = Kind.EMAIL, dummy = false) MessageSender messageSender){
+    public MessageSendService(@CustomSms(kind = Kind.SMS, dummy = true) MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
     }

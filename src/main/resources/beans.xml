@@ -10,6 +10,14 @@
     <!-- annotation 설정을 위해 추가-->
     <context:annotation-config></context:annotation-config>
 
+    <bean class="org.springframework.beans.factory.annotation.CustomAutowireConfigurer">
+        <property name="customQualifierTypes">
+            <set>
+                <value>com.nhnacademy.edu.springframework.annotation.CustomSms</value>
+            </set>
+        </property>
+    </bean>
+
     <bean id="smsMessageSender"
           class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
           scope="singleton"
