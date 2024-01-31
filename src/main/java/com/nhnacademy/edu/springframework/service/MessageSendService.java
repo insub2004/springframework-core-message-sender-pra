@@ -9,6 +9,7 @@ import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Value;
 
 public class MessageSendService {
 
@@ -16,6 +17,9 @@ public class MessageSendService {
     //private final MessageSender messageSender;
 
     private MessageSender messageSender;
+
+    @Value("${phoneNumber}")
+    private String phoneNumber;
 
     //기본 생성자가 무조건 있어야함 왜냐 set주입을 사용할 것이기 때문에
 //    public MessageSendService(){
@@ -28,6 +32,9 @@ public class MessageSendService {
     }
 
     public void doSendMessage(User user, String message) {
+        System.out.println("변경 전 전화번호 : " + user.getPhoneNumber());
+        user.setPhoneNumber(phoneNumber);
+        System.out.println("변경 후 전화번호 : " + user.getPhoneNumber());
         messageSender.sendMessage(user, message);
     }
     

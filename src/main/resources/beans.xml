@@ -9,7 +9,7 @@
 
     <!-- annotation 설정을 위해 추가-->
     <context:annotation-config></context:annotation-config>
-
+    <context:property-placeholder location="classpath:name.properties"></context:property-placeholder>
     <bean class="org.springframework.beans.factory.annotation.CustomAutowireConfigurer">
         <property name="customQualifierTypes">
             <set>
