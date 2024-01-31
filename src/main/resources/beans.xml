@@ -18,15 +18,15 @@
         </property>
     </bean>
 
-    <bean id="smsMessageSender"
-          class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
-          scope="singleton"
-          >
-        <qualifier type="com.nhnacademy.edu.springframework.annotation.CustomSms">
-            <attribute key="kind" value="SMS"/>
-            <attribute key="dummy" value="true"/>
-        </qualifier>
-    </bean>
+<!--    <bean id="smsMessageSender"-->
+<!--          class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"-->
+<!--          scope="singleton"-->
+<!--          >-->
+<!--        <qualifier type="com.nhnacademy.edu.springframework.annotation.CustomSms">-->
+<!--            <attribute key="kind" value="SMS"/>-->
+<!--            <attribute key="dummy" value="true"/>-->
+<!--        </qualifier>-->
+<!--    </bean>-->
 
     <bean id="emailMessageSender"
           class="com.nhnacademy.edu.springframework.sender.EmailMessageSender"

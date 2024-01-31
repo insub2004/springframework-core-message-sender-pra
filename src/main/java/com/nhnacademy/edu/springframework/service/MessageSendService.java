@@ -42,4 +42,12 @@ public class MessageSendService {
         System.out.println("set 메소드 실행!");
         this.messageSender = messageSender;
     }
+
+    public void init() {
+        System.out.println(this.getClass().getCanonicalName()+": init!!");
+    }
+
+    public void cleanup() {
+        System.out.println(this.getClass().getCanonicalName()+": cleanup!!");
+    }
 }
