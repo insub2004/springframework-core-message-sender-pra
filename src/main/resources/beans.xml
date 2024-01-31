@@ -3,8 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-       default-init-method="init"
-       default-destroy-method="destroy">
+       >
 
     <bean id="smsMessageSender"
           class="com.nhnacademy.edu.springframework.sender.SmsMessageSender"
@@ -21,6 +20,7 @@
     <bean id="messageSendService"
           class="com.nhnacademy.edu.springframework.service.MessageSendService"
           >
-        <constructor-arg ref="smsMessageSender"></constructor-arg>
+        <property name="messageSender" ref="smsMessageSender"></property>
+        <!--name 으로 set메서드를 찾고 ref에 있는 id의 스프린 빈 객체를 set메서드 파라미터로 주입-->
     </bean>
 </beans>

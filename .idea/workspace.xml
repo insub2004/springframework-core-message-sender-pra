@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +21,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra02/IoC03" />
+        <entry key="$PROJECT_DIR$" value="pra02/DI01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +53,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/DI01",
+    "git-widget-placeholder": "pra02/DI02",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,13 +86,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-e2c057a1" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -99,7 +95,9 @@
       <option name="presentableId" value="Default" />
       <updated>1706533862387</updated>
       <workItem from="1706533863540" duration="3095000" />
-      <workItem from="1706588511431" duration="1836000" />
+      <workItem from="1706588511431" duration="3462000" />
+      <workItem from="1706680408863" duration="598000" />
+      <workItem from="1706681380368" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -189,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706625368016</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입">
+      <option name="closed" value="true" />
+      <created>1706625997267</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706625997267</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +234,7 @@
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋" />
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋2" />
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
+    <MESSAGE value="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입" />
+    <option name="LAST_COMMIT_MESSAGE" value="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입" />
   </component>
 </project>
