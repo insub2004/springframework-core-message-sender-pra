@@ -15,7 +15,7 @@ public class Main {
             // 이제 xml에 있는 messageSender 빈 객체들을 가져와서 호출해주지 않고
             // messageSenderService를 빈 객체로 만들고 생성자 주입 방식으로 messageSender 빈 객체를 주입해준다.
             MessageSendService messageSendService = context.getBean("messageSendService",MessageSendService.class);
-            messageSendService.doSendMessage(user,"DI 실습02");
+            messageSendService.doSendMessage(user,"DI 실습03");
         }
     }
 

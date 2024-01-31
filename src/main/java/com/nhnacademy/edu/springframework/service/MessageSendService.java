@@ -1,6 +1,7 @@
 package com.nhnacademy.edu.springframework.service;
 
 import com.nhnacademy.edu.springframework.domain.User;
+import com.nhnacademy.edu.springframework.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.sender.MessageSender;
 import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
 
@@ -11,12 +12,12 @@ public class MessageSendService {
 
     private MessageSender messageSender;
 
-    //기본 생성자 추가
+    //기본 생성자가 무조건 있어야함 왜냐 set주입을 사용할 것이기 때문에
     public MessageSendService(){
         System.out.println("service 기본 생성자 실행");
     }
 
-    public MessageSendService(MessageSender messageSender){
+    public MessageSendService(SmsMessageSender messageSender){
         this.messageSender = messageSender;
     }
 

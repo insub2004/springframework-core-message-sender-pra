@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="DI 실습 02, setter 주입 방식">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
     </list>
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra02/DI01" />
+        <entry key="$PROJECT_DIR$" value="pra02/DI02" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +50,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/DI02",
+    "git-widget-placeholder": "pra02/DI03",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,7 +94,7 @@
       <workItem from="1706533863540" duration="3095000" />
       <workItem from="1706588511431" duration="3462000" />
       <workItem from="1706680408863" duration="598000" />
-      <workItem from="1706681380368" duration="1777000" />
+      <workItem from="1706681380368" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -195,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706625997267</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="DI 실습 02, setter 주입 방식">
+      <option name="closed" value="true" />
+      <created>1706685037291</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706685037291</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +217,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/pra02/IoC03" />
+                        <option value="origin/pra02/DI02" />
                       </list>
                     </value>
                   </entry>
@@ -235,6 +240,7 @@
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 삭제하고 커밋2" />
     <MESSAGE value="IoC 실습 2번 bean Scope singleton,prototype 차이 default-init,default-destroy 사용" />
     <MESSAGE value="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입" />
-    <option name="LAST_COMMIT_MESSAGE" value="DI 실습 01, MessageSendService 빈 객체 등록, 생성자 주입 방식으로MessageSender 타입의 빈 객체를 주입" />
+    <MESSAGE value="DI 실습 02, setter 주입 방식" />
+    <option name="LAST_COMMIT_MESSAGE" value="DI 실습 02, setter 주입 방식" />
   </component>
 </project>
