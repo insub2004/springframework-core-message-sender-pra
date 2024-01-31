@@ -4,6 +4,7 @@ import com.nhnacademy.edu.springframework.domain.User;
 import com.nhnacademy.edu.springframework.sender.EmailMessageSender;
 import com.nhnacademy.edu.springframework.sender.MessageSender;
 import com.nhnacademy.edu.springframework.sender.SmsMessageSender;
+import org.springframework.beans.factory.annotation.Required;
 
 public class MessageSendService {
 
@@ -17,7 +18,8 @@ public class MessageSendService {
         System.out.println("service 기본 생성자 실행");
     }
 
-    public MessageSendService(SmsMessageSender messageSender){
+
+    public MessageSendService(MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
     }
@@ -26,10 +28,9 @@ public class MessageSendService {
         messageSender.sendMessage(user, message);
     }
 
-    // set메서드 이름보단 set메서드의 타입이 중요함
-    public void setSmsMessageSender(MessageSender messageSender) {
+    @Required
+    public void setMessageSender(MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
         this.messageSender = messageSender;
     }
-
 }
