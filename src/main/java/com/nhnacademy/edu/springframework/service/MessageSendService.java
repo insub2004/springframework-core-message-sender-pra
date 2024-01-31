@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MessageSendService {
 
     //final 키워드 이므로 객체를 생성한 뒤 greeter 변수에 값을 할당할 수 없다.
@@ -26,7 +28,7 @@ public class MessageSendService {
 //    }
 
     @Autowired
-    public MessageSendService(MessageSender messageSender){
+    public MessageSendService(@Qualifier("smsMessageSender") MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         System.out.println(messageSender.hashCode());
         this.messageSender = messageSender;
@@ -43,13 +45,5 @@ public class MessageSendService {
         System.out.println("set 메소드 실행!");
         System.out.println(messageSender.hashCode());
         this.messageSender = messageSender;
-    }
-
-    public void init() {
-        System.out.println(this.getClass().getCanonicalName()+": init!!");
-    }
-
-    public void cleanup() {
-        System.out.println(this.getClass().getCanonicalName()+": cleanup!!");
     }
 }

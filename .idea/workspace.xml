@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="javaConfig 밑에 sms Bean으로 등록 + 커스텀 어노테이션 사용해서 Qualifier">
+    <list default="true" id="b9dfa0f7-0b32-41ad-8789-12332b1b62d5" name="Changes" comment="커스텀 Qualifier com.nhnacademy.edu.springframework.annotation.CustomSms추가로 @Qualifier 없애기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/config/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/config/JavaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/service/MessageSendService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pra02/DI04-04" />
+        <entry key="$PROJECT_DIR$" value="pra02/JC01" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +54,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pra02/JC01",
+    "git-widget-placeholder": "pra02/JC02",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -107,7 +109,7 @@
       <workItem from="1706680408863" duration="598000" />
       <workItem from="1706681380368" duration="2480000" />
       <workItem from="1706690902342" duration="157000" />
-      <workItem from="1706691065488" duration="11660000" />
+      <workItem from="1706691065488" duration="6773000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성">
       <option name="closed" value="true" />
@@ -277,39 +279,7 @@
       <option name="project" value="LOCAL" />
       <updated>1706702097551</updated>
     </task>
-    <task id="LOCAL-00022" summary="@Value">
-      <option name="closed" value="true" />
-      <created>1706703097252</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1706703097252</updated>
-    </task>
-    <task id="LOCAL-00023" summary="@Value">
-      <option name="closed" value="true" />
-      <created>1706703106960</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1706703106960</updated>
-    </task>
-    <task id="LOCAL-00024" summary="AnnotationConfigAppilcationContext로 변경">
-      <option name="closed" value="true" />
-      <created>1706704009352</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1706704009352</updated>
-    </task>
-    <task id="LOCAL-00025" summary="javaConfig 밑에 sms Bean으로 등록 + 커스텀 어노테이션 사용해서 Qualifier">
-      <option name="closed" value="true" />
-      <created>1706705554120</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1706705554120</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +316,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/pra02/DI04-01" />
+                        <option value="origin/pra02/JC01" />
                       </list>
                     </value>
                   </entry>
@@ -378,9 +348,6 @@
     <MESSAGE value="DI 실습04/02 Qualifier" />
     <MESSAGE value="커스텀 Qualifier 추가" />
     <MESSAGE value="커스텀 Qualifier com.nhnacademy.edu.springframework.annotation.CustomSms추가로 @Qualifier 없애기" />
-    <MESSAGE value="@Value" />
-    <MESSAGE value="AnnotationConfigAppilcationContext로 변경" />
-    <MESSAGE value="javaConfig 밑에 sms Bean으로 등록 + 커스텀 어노테이션 사용해서 Qualifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="javaConfig 밑에 sms Bean으로 등록 + 커스텀 어노테이션 사용해서 Qualifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="커스텀 Qualifier com.nhnacademy.edu.springframework.annotation.CustomSms추가로 @Qualifier 없애기" />
   </component>
 </project>
