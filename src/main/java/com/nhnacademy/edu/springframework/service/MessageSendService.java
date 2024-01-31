@@ -19,8 +19,8 @@ public class MessageSendService {
 //    public MessageSendService(){
 //        System.out.println("service 기본 생성자 실행");
 //    }
-    
-    public MessageSendService(MessageSender messageSender){
+    @Autowired
+    public MessageSendService(@Qualifier("emailMessageSender") MessageSender messageSender){
         System.out.println("파라미터 1개 있는 생성자 실행");
         this.messageSender = messageSender;
     }
@@ -28,7 +28,6 @@ public class MessageSendService {
     public void doSendMessage(User user, String message) {
         messageSender.sendMessage(user, message);
     }
-    
     
     public void setMessageSender(MessageSender messageSender) {
         System.out.println("set 메소드 실행!");
